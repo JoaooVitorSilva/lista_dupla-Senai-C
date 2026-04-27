@@ -9,21 +9,14 @@ lista_dupla/
 ├── nodo.h / nodo.c       # TAD Nodo duplo
 ├── lista.h / lista.c     # TAD Lista duplamente encadeada
 ├── aluno.h / aluno.c     # Desafio extra: lista de alunos
-├── main.c                # Testes das operações
-└── Makefile              # Automação da compilação
+└── main.c                # Testes das operações
 ```
 
 ## Como compilar e executar
 
 ```bash
-make
+gcc -Wall -Wextra -o lista_dupla main.c nodo.c lista.c aluno.c
 ./lista_dupla
-```
-
-Para limpar o executável:
-
-```bash
-make clean
 ```
 
 ## Funcionalidades implementadas
@@ -47,10 +40,9 @@ make clean
 ## Requisitos
 
 - GCC
-- Make
 
 Em sistemas Debian/Ubuntu:
 
 ```bash
-sudo apt install gcc make
+sudo apt install gcc
 ```
